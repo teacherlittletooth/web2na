@@ -1,0 +1,16 @@
+.login-center {
+    text-align: center;
+    border-radius: 2%;
+    background-color: rgba(44, 152, 247, 0.301);
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5%;
+}
+
+footer {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 2%;
+}
