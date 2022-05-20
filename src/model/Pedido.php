@@ -6,6 +6,7 @@ class Pedido
 {
     //Atributos
     private $codPedido;
+    public $dataHora;
     public $itens;
     public $quantidade;
     public $pagamento;
@@ -24,6 +25,7 @@ class Pedido
     private function gerarData()
     {
         date_default_timezone_set("America/Sao_Paulo");
+        $this->dataHora = date('Y-m-d H:i:s');
         echo "<br>Data e hora do pedido:<br>";
         echo date("d/m/Y") . "<br>" . date("H:i:s");
     }

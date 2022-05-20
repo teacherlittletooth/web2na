@@ -1,16 +1,15 @@
 <?php
-
+/*
 use Database\Database;
-
 require_once "../src/model/Database.php";
-
 $db = new Database();
+
 //var_dump($db);
 $db->insert(
     "INSERT INTO usuarios(nome, email, senha)
-    VALUES ('Paulo Donini' , 'donini@eumesmo.com' , '1234'); "
+    VALUES ('André Rocha' , 'andre@bol.com' , '4321'); "
 );
-
+*/
 ?>
 
 <?php require_once "../src/views/header.php"; ?>
