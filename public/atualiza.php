@@ -21,7 +21,7 @@ use Database\Database;
     //var_dump($resultDb);
 ?>
 
-<form method="post" action="../src/model/update.php">
+<form method="post" action="../data/update.php">
     <h2>Atualização do pedido</h2>
 
     <h4>Código:</h4>

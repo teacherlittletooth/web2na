@@ -36,12 +36,26 @@ use Database\Database;
                 <td> <?= $linha->quantidade ?> </td>
                 <td> <?= $linha->pagamento ?> </td>
                 <td> <?= $linha->local_entrega ?> </td>
-                <td><a href="../public/atualiza.php?cod=<?= $linha->cod ?>">Editar</a></td>
-                <td><a>Apagar</a></td>
+                <td>
+                    <a href="../public/atualiza.php?cod=<?= $linha->cod ?>">
+                        Editar
+                    </a>
+                </td>
+                <td><a onclick="confirmaDelete(<?= $linha->cod ?>);">Apagar</a></td>
             </tr>
         <?php endforeach; ?>
 
     </tbody>
 </table>
+
+<script>
+    function confirmaDelete(id) {
+        if( confirm("Deseja apagar o pedido " + id + "?") ) {
+            window.location.href="../data/delete.php?cod="+id;
+        } else {
+            alert("Exclusão cancelada!");
+        }
+    }
+</script>
 
 <?php require_once "../src/views/footer.php"; ?>
